@@ -13,7 +13,13 @@
 
     <header class="header">
         <a href="#" class="logo"><img src="assets/logo/bonz.ai-logo-black-landscape.png"></a>
+        <section class="hamburger">
+        <article class="line"></article>
+        <article class="line"></article>
+        <article class="line"></article>
 
+
+        </section>
 
         <nav class="nav-bar">
           <ul>
@@ -34,8 +40,23 @@
         Hotellet är beläget vid en sjö och kan garantera
         er en underbar vistelse blandad med högteknologi
         och en fantastisk naturnära upplevelse.Genom att använda drönare för att tillhandahålla olika tjänster och beställningar strävar vi efter att erbjuda bekvämlighet utan att kompromissa med vårt ekologiska fotavtryck. </p>
-    
-        <button class="button">Boka Här</button>
+        <div class="wrapper-searchbox">
+        <div class="search-container">
+          <form class="date-form">
+            <span>Sök efter Lediga rum</span>
+            <label for="from-date">Från Datum:</label>
+           
+            <input type="date" id="from-date" name="from-date">
+        
+            <label for="to-date">Till Datum:</label>
+            <span></span>
+            <input type="date" id="to-date" name="to-date">
+        
+            <button type="submit">Sök</button>
+          </form>
+        </div>
+       </div>
+        
     </section>
     
 
@@ -78,15 +99,9 @@
         <p>Röststyrda rum med AI</p>
       </div>
       
-      <div class="card">
-        <img src="assets/photos/07-night.jpg">
-        <p>Barnvagnar finns att låna</p>
-      </div>
       
-      <div class="card">
-        <img src="assets/photos/06-night.jpg">
-        <p>Extra sängar finns att låna</p>
-      </div>
+      
+     
       
     </div>
     <button class="boka-button">Boka din upplevelse och vistelse här</button>
@@ -168,15 +183,7 @@
     </div>
   </div>
 </footer>
-<script>
-
-  hamburger= document.querySelector(".hamburger");
-  hamburger.onclick = function(){
-
-    navBar = document.querySelector(".nav");
-    navBar.classlist.toggle("active");
-  }
-</script>
+<script src="js/script.js"></script> 
 </body>
 
 </html>

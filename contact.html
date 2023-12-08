@@ -11,24 +11,157 @@
 
 <body>
 
-    <header class="header">
-        <a href="#" class="logo"><img src="assets/logo/bonz.ai-logo-black-landscape.png"></a>
-
-
-        <nav>
-            <a href="index.html">HEM</a>
-            <a href="contact.html" class="active">Bokning</a>
-            <a href="omoss.html">OM OSS</a>
-            <a href="our-work.html">Våra Erbjudanden</a>
-
-        </nav>
-
-    </header>
-
-    <section class="hero-our-work">
+  <header class="header">
+    <a href="#" class="logo"><img src="assets/logo/bonz.ai-logo-black-landscape.png"></a>
+    <section class="hamburger">
+    <article class="line"></article>
+    <article class="line"></article>
+    <article class="line"></article>
+    
 
     </section>
+    <form>
+      <input type="text" placeholder="Kolla antal lediga rum">
+      <input type="date" placeholder="Check-in Date">
+      <input type="date" placeholder="Check-out Date">
+      <button type="submit">Search</button>
+  </form>
+    <nav class="nav-bar">
+      <ul>
+      
+       <li><a href="index.html" class="active">HEM</a></li>
+        <li><a href="contact.html">BOKNING</a></li>
+       <li><a href="omoss.html">OM OSS</a></li>
+        <li><a href="our-work.html">Våra Erbjudanden</a></li>
+      </ul>
+    </nav>
 
+</header>
+
+<div class="wrapper-card">
+  
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card-booking-room">
+      <img src="assets/photos/singleroom.jpg" alt="Card Image 1">
+      <div class="card-info">
+        <h3>Singelrum</h3>
+        <p>1500 kr</p>
+        <div class="ratings">
+          <span class="rating">4.5</span>
+          <span class="stars">⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    </div>
+    
+ 
+  
+    <!-- Card 2 -->
+    <div class="card-booking-room">
+      <img src="assets/photos/singleroom.jpg">
+      <div class="card-info">
+        <h3>Singelrum</h3>
+        <p>1300 kr</p>
+        <div class="ratings">
+          <span class="rating">4.2</span>
+          <span class="stars">⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    
+    
+  </div>
+  
+    <!-- Card 3 -->
+    <div class="card-booking-room">
+      <img src="assets/photos/vip-section.jpg" alt="Card Image 1">
+      <div class="card-info">
+        <h3>Dubbelrum</h3>
+        <p>2100 kr</p>
+        <div class="ratings">
+          <span class="rating">4.1</span>
+          <span class="stars">⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    
+    
+  </div>
+
+    <!-- Card 4 -->
+    <div class="card-booking-room">
+      <img src="assets/photos/dubbleroom.jpg" alt="Card Image 1">
+      <div class="card-info">
+        <h3>Dubbelrum</h3>
+        <p>2100 kr</p>
+        <div class="ratings">
+          <span class="rating">4.7</span>
+          <span class="stars">⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    
+    
+  </div>
+  
+    <!-- Card 5 -->
+    <div class="card-booking-room">
+      <img src="assets/photos/dubbleroom.jpg" alt="Card Image 1">
+      <div class="card-info">
+        <h3>Dubbelrum</h3>
+        <p>2300 kr</p>
+        <div class="ratings">
+          <span class="rating">4.0</span>
+          <span class="stars">⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    
+    
+  </div>
+  
+    <!-- Card 6 -->
+    <div class="card-booking-room">
+      <img src="assets/photos/vip-section.jpg" alt="Card Image 1">
+      <div class="card-info">
+        <h3>Svit nr 1</h3>
+        <p>3500 kr</p>
+        <div class="ratings">
+          <span class="rating">4.5</span>
+          <span class="stars">⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    
+    
+  </div>
+  
+    <!-- Card 7 -->
+    <div class="card-booking-room">
+      <img src="assets/photos/vip-section.jpg" alt="Card Image 1">
+      <div class="card-info">
+        <h3>Svit nr 2</h3>
+        <p>3700 kr</p>
+        <div class="ratings">
+          <span class="rating">4.4</span>
+          <span class="stars">⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    
+    
+  </div>
+  
+    <!-- Card 8 -->
+    <div class="card-booking-room">
+      <img src="assets/photos/dubbleroom.jpg" alt="Card Image 1">
+      <div class="card-info">
+        <h3>Dubbelrum</h3>
+        <p>2400 kr</p>
+        <div class="ratings">
+          <span class="rating">4.8</span>
+          <span class="stars">⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    
+    
+  </div>
+  </div>
+  </div>  
     
     
        
@@ -42,85 +175,13 @@
 
 
 
-    </section>
-
-    <div class="form-wrapper">
-        <div class="form-container">
-            <h1>Boka Rum</h1>
-            <article class="line__below-h1">
-
-
-            </article>
-            <form class="form">
-                <div class="form__form-inner">
-                    <div class="form__input-group">
-                        <label for="fName">Förnamn:</label>
-                        <input type="text" id="fName" placeholder="Ange förnamn...">
-                    </div>
-                   
-                    <div class="form__input-group">
-                        <label for="email">Mailadress:</label>
-                        <input type="email" id="email" placeholder="Ange mail...">
-                    </div>
-                    <div class="form__input-group">
-                        <label for="lName">Efternamn:</label>
-                        <input type="text" id="lName" placeholder="Ange efternamn...">
-                    </div>
-                    
-                    <div class="form__input-group">
-                        <label for="role">Vilken typ av rum:</label>
-                        <select name="job-role" id="role">
-                            <option value="">Vilket rum önskas:</option>
-                            <option value="enkelrum">Enkelrum</option>
-                            <option value="dubbelrum">Dubbelrum</option>
-                            <option value="svit">Svit</option>
-
-                           
-                        </select>
-                    </div>
-                    <div class="form__input-group">
-                        <label for="address">Adress:</label>
-                        <input type="address" id="address" placeholder="Ange adress..">
-                    </div>
-                    <div class="form__input-group">
-                        <label for="role">Antal personer:</label>
-                        <select name="job-role" id="role">
-                            <option value="">Hur många ?:</option>
-                            <option value="en">1 st</option>
-                            <option value="tva">2 st</option>
-                            <option value="tre">3 st</option>
-                            <option value="fyra">4 st</option>
-                            <option value="fem">5 st</option>
-                            <option value="sex">6 st</option>
-                            
-                        </select>
-                    </div>
-
+    
                        
 
 
 
                    
-                    <div class="form__input-group">
-                        <label for="date">Datum:Från</label>
-                        <input type="date" id="date">
-                    </div>
-                   
-                    <div class="form__input-group">
-                        <label for="date">Datum:Till</label>
-                        <input type="date" id="date">
-                    </div>
-                   
                     
-                </div>
-                <section class="button__submit-group">
-                <input type="submit" value="Boka Rum">
-            </section>
-            
-            </form>
-        </div>
-    </div>
-
 
 
     <footer class="footer">
@@ -166,6 +227,7 @@
           </div>
         </div>
       </footer>
-</body>
+      <script src="js/script.js"></script> 
+    </body>
 
 </html>
