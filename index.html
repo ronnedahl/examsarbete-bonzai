@@ -7,16 +7,18 @@
     <title>Exemination-bonzai-ai</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
     <header class="header">
-        <a href="#" class="logo"><img src="assets/logo/bonz.ai-logo-black-landscape.png"></a>
+        <a href="index.html" class="logo"><img src="assets/logo/bonz.ai-logo-black-landscape.png"></a>
         <section class="hamburger">
-        <article class="line"></article>
-        <article class="line"></article>
-        <article class="line"></article>
+        <article class="hamburger__line"></article>
+        <article class="hamburger__line"></article>
+        <article class="hamburger__line"></article>
 
 
         </section>
@@ -34,15 +36,17 @@
     </header>
 
     <section class="hero">
-    <section class="hero-text">
+    <section class="hero__text">
         <h1>HOTELLET SOM ÄR  AI DRIVET</h>
     <p>välkommen till vårat eko drivna AI hotell.
         Hotellet är beläget vid en sjö och kan garantera
         er en underbar vistelse blandad med högteknologi
         och en fantastisk naturnära upplevelse.Genom att använda drönare för att tillhandahålla olika tjänster och beställningar strävar vi efter att erbjuda bekvämlighet utan att kompromissa med vårt ekologiska fotavtryck. </p>
-        <div class="wrapper-searchbox">
-        <div class="search-container">
-          <form class="date-form">
+        
+        <section class="hero__wrapper-searchbox">
+        <section class="hero__search-container">
+          <form action="contact.html" method="get" class="hero__date-form">
+         
             <span>Sök efter Lediga rum</span>
             <label for="from-date">Från Datum:</label>
            
@@ -54,66 +58,86 @@
         
             <button type="submit">Sök</button>
           </form>
-        </div>
-       </div>
         
+        </section>
+        </section>
+        </form>
     </section>
     
 
 </section>
 
-
+ <!-- Room gallery -->
 
 <div class="wrapper">
     
     <h2>VÅRA FANTASTISKA RUM MED SJÖUTSIKT !</h2>
     
-    <div class="grid-container">
-      <div class="card">
+    <section class="card">
+      <article class="card__img">
         <img src="assets/photos/04-day.jpg">
         <p>Dubbelrum från 1500kr</p>
-      </div>
+      </article>
       
-      <div class="card">
+      <article class="card__img">
         <img src="assets/photos/02-day.jpg">
         <p>Enkelrum från 1000kr</p>
-      </div>
+      </article>
       
-      <div class="card">
+      <article class="card__img">
         <img src="assets/photos/03-day.jpg">
         <p>Svit från 2000kr</p>
-      </div>
+      </article>
       
-      <div class="card">
+      <article class="card__img">
         <img src="assets/photos/05-day.jpg">
         <p>Frukost alltid inkluderad</p>
-      </div>
+      </article>
       
-      <div class="card">
+      <article class="card__img">
         <img src="assets/photos/spa.jpeg">
         <p>spa-avdelning 150kr/timme</p>
-      </div>
+      </article>
       
-      <div class="card">
+      <article class="card__img">
         <img src="assets/photos/08-night.jpg">
         <p>Röststyrda rum med AI</p>
-      </div>
+      </article>
+
+      <article class="card__img">
+        <img src="assets/photos/drone-ai.jpg">
+        <p>Drönar tjänster</p>
+      </article>
+
+      <article class="card__img">
+        <img src="assets/photos/08-night.jpg">
+        <p>Röststyrda rum med AI</p>
+      </article>
+
+      <article class="card__img">
+        <img src="assets/photos/08-night.jpg">
+        <p>Röststyrda rum med AI</p>
+      </article>
       
       
+ <!-- Room gallery Ends here -->
       
      
       
-    </div>
-    <button class="boka-button">Boka din upplevelse och vistelse här</button>
-    
+    </section>
+    <section class="boka-button">
+    <button>Boka din upplevelse och vistelse här</button>
+  </section>
 
 </div>
-<div class="about-us-line-h2">
+
+<section class="section-background-white-about-us">
+<article class="about-us-line-h2">
 <h2>OM VÅRAN VERKSAMHET</h2>
-</div>
+</article>
 <section class="about-us">
 
-<article class="about-us-text">
+<article class="about-us__text">
   <h3>Vi lovar en upplevelse utöver det vanliga</h3>
   <p>Vår hotellverksamhet är grundad på ett starkt engagemang för hållbarhet och
      miljömedvetenhet. Vi integrerar avancerad AI-teknik
@@ -125,25 +149,25 @@
      <p>När du checkar in på vårt hotell möts du av en lugnande atmosfär där naturen smälter samman
        med modern design. Varje rum är utformat för att maximera sjöutsikten
        och erbjuda en lugn oas för avkoppling och inspiration.</p>
-      <button class="about-us-button">Läs Mer Här</button>
+      <button class="about-us__button">Läs Mer Här</button>
 
       </article>
 
 
-<section class="about-us-img">
+<section class="about-us__img">
 <img src="assets/photos/drone-delivering.jpg">
 </section>
    </section> 
 
-
+</section>
 
 
 
 
 <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-col">
+  <section class="footer__container">
+    <section class="footer__row">
+      <article class="footer__footer-col">
         <h4>Vårat Hotell</h4>
         <ul>
           <li><a href="#">Hem</a></li>
@@ -151,8 +175,8 @@
           <li><a href="#">Om Oss</a></li>
           <li><a href="#">Våra Erbjudanden</a></li>
         </ul>
-      </div>
-      <div class="footer-col">
+      </article>
+      <article class="footer__footer-col">
         <h4>Vi hjälper</h4>
         <ul>
           <li><a href="#">FAQ</a></li>
@@ -161,8 +185,8 @@
           <li><a href="#">Betalnings lösningar</a></li>
           <li><a href="#">parkeringar</a></li>
         </ul>
-      </div>
-      <div class="footer-col">
+      </article>
+      <article class="footer__footer-col">
         <h4>Drönar Tjänst</h4>
         <ul>
           <li><a href="#">karta</a></li>
@@ -170,18 +194,18 @@
           <li><a href="#">kostnad</a></li>
           <li><a href="#">utbud</a></li>
         </ul>
-      </div>
-      <div class="footer-col">
+      </article>
+      <article class="footer__footer-col">
         <h4>Följ Oss</h4>
-        <div class="social-links">
+        <article class="social-links">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
+        </article>
+      </article>
+    </section>
+  </section>
 </footer>
 <script src="js/script.js"></script> 
 </body>

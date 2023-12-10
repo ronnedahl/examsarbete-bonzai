@@ -1,569 +1,640 @@
+* {
 
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Paytone+One&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yatra+One&display=swap');
-*{
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-:root{
+:root {
 
-    --formfields-buttonus: #D9D9D9;
-    --button: #F81717;
-   --white-background: #F5F5F5;
+  --formfields-buttonus: #D9D9D9;
+  --button: #F81717;
+  --white-background: #F5F5F5;
 }
 
-body{
+body {
 
-    background-color: black;
-    overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
-.hero{
+.hero {
 
-    min-height: 100vh;
-    background-image: url("assets/photos/09-day.jpg");
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  background-image: url("assets/photos/09-day.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.header .logo img{
+.header .logo img {
 
-    width: 111px;
-    height: 25px;
+  width: 111px;
+  height: 25px;
 
-
-}
-
-.header .logo{
-
-    padding-top: 15px;
-}
-
-
-
-.header{ 
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.3rem 10%;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    
-    align-items: center;
-    z-index: 100;
-    
 
 }
 
-.hamburger{
-    display:none;
-    
-    
-    }
+.header .logo {
 
-.nav-bar ul{
-
-    display: flex;
+  padding-top: 15px;
 }
 
-.nav-bar ul li a{
 
-    display:block;
-    color:#000000;
-    font-size: 17px;
-    padding: 10px 25px;
-    border-radius: 50px;
-    transition: 0.2s;
-    margin: 0 5px;
+
+.header {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  z-index: 100;
+
+
 }
 
-.nav-bar ul li a:hover{
-    color: #11101b;
-    background:lightblue;
-    
-    }
+.hamburger {
+  display: none;
 
 
-    .nav-bar ul li a.active{
+}
 
-        color: #11101b;
-        background: #fefefe;
-    }
+.nav-bar ul {
 
-    /******navigation top contact form*******/
+  display: flex;
+}
 
-    form {
-        display: flex;
-        margin-top: 1rem;
-    }
-    
-    input[type="text"],
-    input[type="date"],
-    button[type="submit"] {
-        border: none;
-        border-radius: 0.25rem;
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
-    
-    input[type="text"] {
-        flex-grow: 1;
-        margin-right: 1rem;
-        text-transform: uppercase;
-        font-weight:600;
-        font-size:0.9rem;
-       
-    }
+.nav-bar ul li a {
 
-    input[type="date"]{
+  display: block;
+  color: #000000;
+  font-size: 17px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
 
-        background-color: lightblue;
-        margin-right:10px;
-    }
-    
-    button[type="submit"] {
-        background-color: #0077be;
-        color: #fff;
-    }
+.nav-bar ul li a:hover {
+  color: #11101b;
+  background: lightblue;
+
+}
+
+
+.nav-bar ul li a.active {
+
+  color: #11101b;
+  background: #fefefe;
+}
+
+/******navigation top contact form*******/
+
+form {
+  display: flex;
+  margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="date"],
+button[type="submit"] {
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+}
+
+input[type="date"] {
+
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #0077be;
+  color: #fff;
+}
+
 /******navigation top contact form Ends here*******/
 
 
-.hero-text{
-    position: absolute;
-    top: 20%;
-    left: 10%;
+.hero__text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
 }
 
-.hero h1{
+.hero h1 {
 
-    font-size:48px;
-    font-family: 'Paytone';
-}
-.hero p{
-    margin-top:18px;
-    font-size:26px;
-    max-width:699px;
-    font-family:'Poppins,italic';
-    line-height: 2.0rem;
-    font-weight: 100;
+  font-size: 48px;
+  font-family: 'Paytone';
 }
 
-.hero-text .button{
-    margin-top:30px;
-    padding:10px 40px;
-    background-color: #D9D9D9;
+.hero p {
+  margin-top: 18px;
+  font-size: 26px;
+  max-width: 699px;
+  font-family: 'Poppins,italic';
+  line-height: 2.0rem;
+  font-weight: 100;
 }
+
+.hero-text .button {
+  margin-top: 30px;
+  padding: 10px 40px;
+  background-color: #D9D9D9;
+}
+
 /******Room search form*******/
-.wrapper-searchbox{
+.hero__wrapper-searchbox {
 
-    width: 100%;
+  width: 100%;
 }
 
-.search-container {
-    width: 484px;
-    height: 143px;
-    background-color: rgba(0,0,0,.5);
-    padding: 5px 10px;
-    border-radius:20px;
-    margin-top: 20px;
-  }
-  
-  .date-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .date-form label {
-    margin-bottom: 5px;
-    font-size: 0.6rem;
-    color:white;
-  }
+.hero__search-container {
+  width: 484px;
+  height: 143px;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
 
-  .date-form span{
+.hero__date-form {
+  display: flex;
+  flex-direction: column;
+}
 
-    font-size:0.8rem;
-    color: white;
-    text-transform: uppercase;
-  }
+.hero__date-form label {
+  margin-bottom: 5px;
+  font-size: 0.6rem;
+  color: white;
+}
+
+.hero__date-form span {
+
+  font-size: 0.8rem;
+  color: white;
+  text-transform: uppercase;
+}
 
 
-  
-  .date-form input[type="date"],
-  .date-form button {
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius:10px;
-  }
-  
-  .date-form button {
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 2px;
-  }
+
+.hero__date-form input[type="date"],
+.hero__date-form button {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.hero__date-form button {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
 
 /******Room search form Ends here*******/
 
-.wrapper{
-    margin: 100px 200px 100px 200px;
+.wrapper-grid-container-ourroom {
+  margin: 100px 200px 100px 200px;
+
+}
+
+.card {
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-auto-rows: 280px;
+  grid-auto-flow: dense;
+  grid-gap: 25px;
+  width: 100%;
+}
+
+.card .card:hover img {
+
+  transform: scale(1.2);
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card__img img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 1px;
+  transition: transform 0.5s;
+  user-select: none;
+}
+
+.card__img p {
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+
+
+.wrapper h2 {
+
+  color: white;
+  text-align: center;
+
+  font-size: 32px;
+  margin-bottom: 40px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding-top:20px;
+}
+
+.boka-button {
+
+  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:20px;
+
+  
+}
+
+.boka-button button{
+  background-color: #D9D9D9;
+  padding: 20px 150px;
+  cursor: pointer;
+}
+
+.about-us-line-h2 h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.about-us {
+
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  margin: 0 auto;
+ padding-bottom: 60px;
+}
+
+.about-us h2 {
+
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  font-weight: 400;
+}
+
+.section-background-white-about-us{
+  background-color:white;
  
-   }
-
-.grid-container {
-    
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-auto-rows: 280px;
-    grid-auto-flow: dense;
-    grid-gap: 25px;
-    width: 100%;
-  }
-
-  .grid-container .card:hover img{
-
-    transform: scale(1.2);
-  }
-  
-  .card {
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 85%; 
-    object-fit: cover;
-    border-radius: 1px;
-    transition: transform 0.5s;
-    user-select: none;
-  }
-  
-  .card p {
-    padding: 5px;
-    text-align: center;
-    color: white;
-  }
-  
- 
-
-  .wrapper h2{
-   
-    color: white;
-    text-align: center;
-    
-    font-size:32px;
-    margin-bottom:40px;
-    font-family: 'Paytone';
-  }
-
-  .boka-button{
-
-    background-color:#D9D9D9;
-    padding: 20px 150px;
-    margin-left:450px;
-   
-    cursor: pointer;
-  }
-h2{
-    color:white;
-    text-align: center;
-    margin-bottom:40px;
-    font-size:2rem;
-    font-weight: 400;
-}
-  .about-us h2{
-
-    text-align: center;
-    font-size: 32px;
-    color: white;
-    font-weight: 400;
-  }
-
-  .about-us p{
-
-    color: white;
-    font-size:1rem;
-    line-height: 1.6rem;
-
-  }
-  .about-us-img{
-
-    margin-right:50px;
-  }
-
-  .about-us-img img{
-
-    width: 100%;
-    height: 100%;
-  }
-
-  .about-us{
-
-    display:flex;
-    flex-direction: row-reverse;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom:60px;
-  }
-
-  .about-us-text{
-
-    max-width: 800px;
-  }
-
-  .about-us-text h3{
-
-    color:white;
-    font-size:1.8rem;
-    margin-bottom:15px;
-    
-  }
-
- .about-us-text .about-us-button{
-
-    margin-top:20px;
-    padding: 10px 40px;
-  }
-/* our-work-section */
-
-.hero-our-work{
-
- 
+  margin-bottom: 40px;
 }
 
-.our-work-container{
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    padding: 150px 0px 80px 0px;
+.about-us p {
+
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6rem;
 
 }
-.our-work-img img{
 
-    width:100%;
-    height: 100%;
-}
-.our-work-img{
+.about-us__img {
 
-    margin-right:60px;
-    
-}
-.our-work-text{
-
-    max-width: 800px;
+  margin-right: 50px;
 }
 
-.our-work-text h3{
+.about-us__img img {
 
-    color: white;
-    font-size: 2rem;
-    font-weight:400;
-    line-height: 2.3rem;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 100%;
 }
 
-.our-work-text p{
 
-    color: white;
-    font-size:1rem;
-    margin-bottom:10px;
-}
-.section-background-white{
 
-    background-color: white; 
-}
-.our-hotell-container{
+.about-us__text {
 
-   
-    width:80%;
-    margin: 0 auto;
-    padding: 50px;
-    
+  max-width: 800px;
 }
 
-.our-hotell-container .our-hotell-container-inner{
+.about-us__text h3 {
 
-display:flex;
-}
-
-.our-hotell-img{
-
-    margin-right: 50px;
-}
-.our-hotell-img img{
-
-   width: 100%;
-   height: 100%;
-   border-radius:10px; 
-}
-
-.our-hotell-text{
-
-    max-width: 60%;
-    min-width: 50%;
-   
-}
-
-.our-hotell-text p{
-
-    font-size:1rem;
-    margin:10px 0;
-}
-
-.our-hotell-text h3{
-
-    font-weight:400;
-    font-size:1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 
 }
-.section-background-white h2{
 
-    color:black;
-    margin-top:40px;
-    padding-top: 40px;
-    font-weight: 400;
+.about-us__text p{
+
+  color:#333;
 }
 
-.our-hotell-container-inner{
-    margin-bottom: 45px;
+.about-us__text .about-us__button {
+
+  margin-top: 20px;
+  padding: 10px 40px;
 }
+
+/***** our-work-section ******/
+
+
+
+.our-work-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 150px 0px 80px 0px;
+
+}
+
+.our-work-container__img img {
+
+  width: 100%;
+  height: 100%;
+}
+
+.our-work-container__img {
+
+  margin-right: 60px;
+
+}
+
+.our-work-container__text {
+
+  max-width: 800px;
+}
+
+.our-work-container__text h3 {
+
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  margin-bottom: 15px;
+}
+
+.our-work-container__text p {
+
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/***** our-hotell-section ******/
+
+
+.section-background-white {
+
+  background-color: white;
+}
+
+.text-title-our-hotell{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-title-our-hotell h2{
+
+  font-size:2rem;
+  color:#333;
+
+}
+
+.our-hotell-container {
+
+
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+
+}
+
+.our-hotell-container .our-hotell-container__inner {
+
+  display: flex;
+}
+
+.our-hotell-container__img {
+
+  margin-right: 50px;
+}
+
+.our-hotell-container__img img {
+
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.our-hotell-container__text {
+
+  max-width: 60%;
+  min-width: 50%;
+
+}
+
+.our-hotell-container__text p {
+
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.5rem;
+  color: #333;
+}
+
+.our-hotell-container__text h3 {
+
+  font-weight: 400;
+  font-size: 1.5rem;
+
+}
+
+.section-background-white h2 {
+
+  color: black;
+  margin-top: 40px;
+  padding-top: 40px;
+  font-weight: 400;
+}
+
+.our-hotell-container__inner {
+  margin-bottom: 45px;
+}
+
 /* our work gallery img */
-.our-img-gallery-container{
+.our-img-gallery-container {
 
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    max-width: 1200px;
-    gap: 10px;
-    margin: 0 auto;
-}
-
-.grid-container card{
-
-   
-    overflow: hidden;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.grid-img img{
-
-    width: 100%;
-    height: auto; 
-    display: block;
-    border-radius: 1px;
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1200px;
+  gap: 10px;
+  margin: 0 auto;
+  padding-bottom: 60px;
 }
 
-#h2-headline{
 
-    font-size: 3rem;
-    margin-top: 25px;
-    font-weight: 400;
+
+
+.grid-img img {
+
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1px;
+}
+
+.h2-headline-gallery {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.h2-headline-gallery h2{
+
+  font-size: 2rem;
+  margin: 25px 0px;
+  font-weight: 400;
+  color: white;
 }
 
 /* footer section */
 
-.container{
-	max-width: 1170px;
-	margin:auto;
+.footer__container {
+  max-width: 1170px;
+  margin: auto;
 }
-.row{
-	display: flex;
-	flex-wrap: wrap;
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
 }
-ul{
-	list-style: none;
+
+ul {
+  list-style: none;
 }
-.footer{
-	background-color: #000000;
-    padding: 60px 0;
-    border-top: 3px solid grey;
+
+.footer {
+  background-color: #000000;
+  padding: 60px 0;
+  border-top: 3px solid grey;
 }
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
+
+.footer__footer-col {
+  width: 25%;
+  padding: 0 15px;
 }
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+
+.footer__footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
 }
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
+
+.footer__footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
 }
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
+
+.footer__footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
 }
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
+
+.footer__footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
+
+.footer__footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
 }
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
+
+.footer__footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+
+.footer__footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
 }
 
 /*responsive*/
-@media(max-width: 767px){
-  .footer-col{
+@media(max-width: 767px) {
+  .footer__footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
 }
-}
-@media(max-width: 574px){
-  .footer-col{
+
+@media(max-width: 574px) {
+  .footer__footer-col {
     width: 100%;
-}
+  }
 }
 
 
@@ -573,33 +644,40 @@ ul{
 
 /******about us information*******/
 
-.map-wrapper{
-    
-   
-}
-.google-maps {
-    width: 100%;
-    max-width: 100%;
-    display: block;
-  }
-  .google-maps iframe {
-    width: 100%; 
-    height: 500px; 
-    display: block; 
-  }
-/******cards booking room*******/
+.map-wrapper {}
 
-.wrapper-card{
-	
-	margin:130px 100px;
+.google-maps {
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }
+
+.google-maps iframe {
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+
+/******cards booking room*******/
+#title-boking-room {
+
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+}
+
+.wrapper-card {
+
+  margin: 130px 100px;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  
+
   padding: 10px;
-  
-  
+
+
 }
 
 .card-booking-room {
@@ -613,7 +691,7 @@ ul{
 
 .card-booking-room img {
   width: 100%;
-  height:300px;
+  height: 300px;
   border-bottom: 1px solid #eee;
 }
 
@@ -625,6 +703,7 @@ ul{
   font-size: 1.5em;
   margin-bottom: 10px;
   font-weight: 300px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card-info p {
@@ -648,235 +727,254 @@ ul{
   font-size: 1.2em;
 }
 
- /***************MediaQuery Starts Here*******************/ 
+/***************MediaQuery Starts Here*******************/
 
 
- @media screen and (max-width : 900px){
+@media screen and (max-width : 900px) {
 
-       .hamburger{
+  .hamburger {
 
-        display: block;
-        cursor: pointer;
-       }
+    display: block;
+    cursor: pointer;
+  }
 
-       .hamburger .line{
-       
-        width: 30px;
-        height:3px;
-        background:#000000;
-        margin: 6px 0;
+  .hamburger .hamburger__line {
 
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    margin: 6px 0;
 
-       }
-
-       .nav-bar{
-        
-        height: 0;
-        position: absolute;
-        top: 80px;
-        left:0;
-        right: 0;
-        width: 100vw;
-        background: white;
-        transition: 0.2s;
-        opacity: 0;
-        overflow: hidden;
-       }
-       
-       .nav-bar ul{
-
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
-
-       }
-       .nav-bar.active ul{
-
-        opacity: 1;
-       }
-       .nav-bar ul li a{
-
-        margin-bottom: 12px;
-        
-
-       }
-       
-       .nav-bar.active{
-
-        height: 450px;
-
-       }
-       
-       
-
-       nav.active{
-
-        opacity: 1;
-       }
-
-       .hero-text h1{
-
-        font-size:1.5rem;
-        
-       }
-
-       .hero-text p{
-
-        font-size:1rem;
-        line-height:1.5rem;
-       }
-
-       .hero-text .button{
-
-        padding: 8px 30px;
-       }
-
-       .wrapper h2{
-
-        font-size: 1.5rem;
-        
-       }
-
-       .grid-container{
-
-        max-width: 100%;
-        padding:0;
-
-       
-       }
-
-       .wrapper{
-
-        margin:0;
-       }
-      .about-us{
-
-        flex-direction: column;
-        width: 90%;
-      }
-
-      .about-us-line-h2 h2{
-
-        font-size:1.8rem;
-      }
-
-      .about-us-text h3{
-
-        font-size: 1.5rem;
-      }
-
-      .about-us-button{
-
-        margin-bottom: 15px;
-      }
-
-      .about-us-img{
-
-        margin: 0;
-        padding: 0;
-      }
-
-      .hero-text{
-        position: absolute;
-        top: 20%;
-        left:2%;
-    }
-
-    .our-work-container{
-
-        flex-direction: column;
-    }
-
-    .our-hotell-container-inner{
-
-        flex-direction: column;
-    }
-
-    .our-hotell-container{
-
-   
-        width:98%;
-        padding: 2px;
-        
-        
-    }
-
-    .our-hotell-img{
-
-        margin-right: 0;
-    }
-
-    .about-us-text{
-
-        margin: 0;
-        padding: 0;
-    }
-
-    #text-title-our-hotell{
-
-        font-size:1.5rem;
-        font-weight: 500;
-    }
-
-    .our-hotell-text{
-
-        max-width:100%;
-        
-       
-       
-    }
-
-    .our-hotell-text h3{
-
-        padding-top:15px;
-    }
-
-    .our-work-text h3{
-
-        margin-top: 15px;
-        font-size:1.5rem;
-    }
-
-    .our-work-container{
-       width: 96%;
-       margin: 0 auto;
- }
-
- .search-container {
-    width: 90%; /* Adjust the width as needed for smaller screens */
-    height: auto; /* Allow height to adjust based on content */
-    padding: 10px;
-
-}
-.date-form input[type="date"],
-  .date-form button {
-    width: 100%; /* Make inputs and button full width */
-    margin-bottom: 5px;
-    
-    padding:3px;
 
   }
-  .date-form button{
+
+  .nav-bar {
+
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: white;
+    transition: 0.2s;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .nav-bar ul {
+
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+
+  }
+
+  .nav-bar.active ul {
+
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
+
+    margin-bottom: 12px;
+
+
+  }
+
+  .nav-bar.active {
+
+    height: 450px;
+
+  }
+
+
+
+  nav.active {
+
+    opacity: 1;
+  }
+
+  .hero__text h1 {
+
+    font-size: 1.5rem;
+
+  }
+
+  .hero__text p {
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .hero__text .button {
+
+    padding: 8px 30px;
+  }
+
+  .wrapper h2 {
+
+    font-size: 1.5rem;
+
+  }
+
+  .grid-container {
+
+    max-width: 100%;
+    padding: 0;
+
+
+  }
+
+  .wrapper-grid-container-ourroom {
+
+    margin: 0;
+  }
+
+  .about-us {
+
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .about-us-line-h2 h2 {
+
+    font-size: 1.8rem;
+  }
+
+  .about-us__text {
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-us__text h3 {
+
+    font-size: 1.5rem;
+  }
+
+  .about-us__button {
+
+    margin-bottom: 15px;
+  }
+
+  .about-us__img {
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero__text {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+  }
+
+  
+
+  .our-hotell-container__inner {
+
+    flex-direction: column;
+  }
+
+  .our-hotell-container__text {
+
+    max-width: 96%;
+    
+  
+  }
+
+  .our-hotell-container {
+
+
+    width: 98%;
+    padding: 2px;
+    
+
+
+  }
+
+  .our-hotell__img {
+
+    margin-right: 0;
+  }
+
+  
+
+  #text-title-our-hotell {
+
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .our-hotell__text {
+
+    max-width: 100%;
+
+
+
+  }
+
+  .our-hotell__text h3 {
+
+    padding-top: 15px;
+  }
+
+  .our-work-container__text h3 {
+
+    margin-top: 15px;
+    font-size: 1.5rem;
+  }
+
+  .our-work-container {
+    width: 96%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .hero__search-container {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+
+  }
+
+  .hero__date-form input[type="date"],
+  .hero__date-form button {
+    width: 100%;
+    margin-bottom: 5px;
+
+    padding: 3px;
+
+  }
+
+  .hero__date-form button {
 
     margin-top: 5px;
   }
 
-  .boka-button{
+  .boka-button {
 
-    
+
     padding: 10px 20px;
-    margin-left:80px;
-    margin-bottom:15px;
-   
+    margin-left: 80px;
+    margin-bottom: 15px;
+
     cursor: pointer;
   }
-  .wrapper-card{
+
+  .wrapper-card {
 
     padding-top: 90px;
-    margin:0;
+    margin: 0;
   }
 
- }
+  .img-gallery{
+
+    grid-template-columns: 1fr;
+  }
+
+}
