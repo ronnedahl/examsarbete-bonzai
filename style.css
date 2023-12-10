@@ -15,7 +15,7 @@
 
 body {
 
-  background-color: black;
+  background-color: #000000;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
@@ -84,7 +84,7 @@ body {
 
 .nav-bar ul li a:hover {
   color: #11101b;
-  background: lightblue;
+  background: #ADD8E6;
 
 }
 
@@ -95,43 +95,6 @@ body {
   background: #fefefe;
 }
 
-/******navigation top contact form*******/
-
-form {
-  display: flex;
-  margin-top: 1rem;
-}
-
-input[type="text"],
-input[type="date"],
-button[type="submit"] {
-  border: none;
-  border-radius: 0.25rem;
-  font-size: 1rem;
-  padding: 0.5rem;
-}
-
-input[type="text"] {
-  flex-grow: 1;
-  margin-right: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.9rem;
-
-}
-
-input[type="date"] {
-
-  background-color: #fff;
-  margin-right: 10px;
-}
-
-button[type="submit"] {
-  background-color: #0077be;
-  color: #fff;
-}
-
-/******navigation top contact form Ends here*******/
 
 
 .hero__text {
@@ -165,6 +128,7 @@ button[type="submit"] {
 .hero__wrapper-searchbox {
 
   width: 100%;
+  
 }
 
 .hero__search-container {
@@ -190,7 +154,7 @@ button[type="submit"] {
 .hero__date-form span {
 
   font-size: 0.8rem;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -205,7 +169,7 @@ button[type="submit"] {
 
 .hero__date-form button {
   background-color: red;
-  color: white;
+  color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 2px;
@@ -255,42 +219,49 @@ button[type="submit"] {
 .card__img p {
   padding: 5px;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
 
 
 .wrapper h2 {
 
-  color: white;
+  color: #fff;
   text-align: center;
 
   font-size: 32px;
   margin-bottom: 40px 0px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  padding-top:20px;
+  padding-top: 20px;
 }
 
 .boka-button {
 
-  
-  display:flex;
+
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 
-  
+
 }
 
-.boka-button button{
+.boka-button button {
   background-color: #D9D9D9;
   padding: 20px 150px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.boka-button button:hover {
+  color: #11101b;
+  background-color: #ADD8E6;
+
 }
 
 .about-us-line-h2 h2 {
-  color: white;
+  color: #fff;
   text-align: center;
   margin-bottom: 40px;
   font-size: 2rem;
@@ -303,26 +274,26 @@ button[type="submit"] {
   flex-direction: row-reverse;
   width: 80%;
   margin: 0 auto;
- padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .about-us h2 {
 
   text-align: center;
   font-size: 32px;
-  color: white;
+  color: #fff;
   font-weight: 400;
 }
 
-.section-background-white-about-us{
-  background-color:white;
- 
+.section-background-white-about-us {
+  background-color: #fff;
+
   margin-bottom: 40px;
 }
 
 .about-us p {
 
-  color: white;
+  color: #fff;
   font-size: 1rem;
   line-height: 1.6rem;
 
@@ -354,15 +325,22 @@ button[type="submit"] {
 
 }
 
-.about-us__text p{
+.about-us__text p {
 
-  color:#333;
+  color: #333;
 }
 
 .about-us__text .about-us__button {
 
-  margin-top: 20px;
+  margin: 20px 0px;
   padding: 10px 40px;
+  transition: 0.5s;
+}
+
+.about-us__text .about-us__button:hover{
+
+  color: #11101b;
+  background-color: #ADD8E6;
 }
 
 /***** our-work-section ******/
@@ -396,7 +374,7 @@ button[type="submit"] {
 
 .our-work-container__text h3 {
 
-  color: white;
+  color: #fff;
   font-size: 2rem;
   font-weight: 400;
   line-height: 2.3rem;
@@ -405,7 +383,7 @@ button[type="submit"] {
 
 .our-work-container__text p {
 
-  color: white;
+  color: #fff;
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 10px;
@@ -416,20 +394,20 @@ button[type="submit"] {
 
 .section-background-white {
 
-  background-color: white;
+  background-color: #fff;
 }
 
-.text-title-our-hotell{
+.text-title-our-hotell {
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.text-title-our-hotell h2{
+.text-title-our-hotell h2 {
 
-  font-size:2rem;
-  color:#333;
+  font-size: 2rem;
+  color: #333;
 
 }
 
@@ -483,7 +461,7 @@ button[type="submit"] {
 
 .section-background-white h2 {
 
-  color: black;
+  color: #000000;
   margin-top: 40px;
   padding-top: 40px;
   font-weight: 400;
@@ -514,7 +492,7 @@ button[type="submit"] {
 
 
 
-.grid-img img {
+.img-gallery__grid-img img {
 
   width: 100%;
   height: auto;
@@ -527,15 +505,15 @@ button[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 
-.h2-headline-gallery h2{
+.h2-headline-gallery h2 {
 
   font-size: 2rem;
   margin: 25px 0px;
   font-weight: 400;
-  color: white;
+  color: #fff;
 }
 
 /* footer section */
@@ -659,10 +637,27 @@ ul {
 }
 
 /******cards booking room*******/
+.wrapper-card__searchbox {
+
+  width: 100%;
+  margin-bottom:60px;
+  
+}
+
+.wrapper-card__search-container {
+  width: 484px;
+  height: 143px;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
 #title-boking-room {
 
   font-size: 1.5rem;
-  color: white;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -727,6 +722,47 @@ ul {
   font-size: 1.2em;
 }
 
+/******contact info*******/
+
+.our-contact-info {
+
+  margin: 200px 300px 100px 300px;
+  display: flex;
+
+}
+
+.our-contact-info__text {
+
+  min-width: 600px;
+}
+
+.our-contact-info__text h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.our-contact-info__text p {
+
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.our-contact-info__img {
+
+  margin-left: 40px;
+}
+
+.our-contact-info__img img {
+
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+
 /***************MediaQuery Starts Here*******************/
 
 
@@ -756,7 +792,7 @@ ul {
     left: 0;
     right: 0;
     width: 100vw;
-    background: white;
+    background: #fff;
     transition: 0.2s;
     opacity: 0;
     overflow: hidden;
@@ -873,7 +909,7 @@ ul {
     left: 2%;
   }
 
-  
+
 
   .our-hotell-container__inner {
 
@@ -883,8 +919,8 @@ ul {
   .our-hotell-container__text {
 
     max-width: 96%;
-    
-  
+
+
   }
 
   .our-hotell-container {
@@ -892,7 +928,7 @@ ul {
 
     width: 98%;
     padding: 2px;
-    
+
 
 
   }
@@ -902,14 +938,23 @@ ul {
     margin-right: 0;
   }
 
-  
 
-  #text-title-our-hotell {
+
+  .text-title-our-hotell h2 {
 
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
+    
   }
 
+  .text-title-our-hotell{
+
+    margin-bottom:40px;
+  }
+
+  
+  
+  
   .our-hotell__text {
 
     max-width: 100%;
@@ -918,14 +963,20 @@ ul {
 
   }
 
-  .our-hotell__text h3 {
+  
 
-    padding-top: 15px;
-  }
+    .our-hotell-container__text h3 {
+
+      font-weight: 400;
+      font-size: 1.5rem;
+      margin-top: 15px;
+    
+    }
+  
 
   .our-work-container__text h3 {
 
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 1.5rem;
   }
 
@@ -956,14 +1007,20 @@ ul {
     margin-top: 5px;
   }
 
-  .boka-button {
+  .boka-button button {
 
 
-    padding: 10px 20px;
-    margin-left: 80px;
-    margin-bottom: 15px;
+    padding: 5px 5px;
+    margin-left:0px;
+    margin-bottom: 5px;
 
     cursor: pointer;
+  }
+
+  .boka-button button:hover {
+    color: #11101b;
+    background-color: #ADD8E6;
+  
   }
 
   .wrapper-card {
@@ -972,9 +1029,64 @@ ul {
     margin: 0;
   }
 
-  .img-gallery{
+  .img-gallery {
 
     grid-template-columns: 1fr;
   }
 
+  .our-contact-info {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .our-contact-info__text{
+
+    margin: 100px 0px 20px 40px;
+    
+  }
+
+  .our-contact-info__text p {
+
+    color: #fff;
+
+    
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .our-contact-info__img{
+
+    margin-bottom: 40px;
+    margin-right: 40px;
+    
+  }
+
+  .our-contact-info__text h1{
+
+    margin:0px 0px 15px 0px;
+    font-size:1.5rem;
+
+  }
+
+  .wrapper-card__searchbox {
+
+   
+    margin-bottom: 20px;
+    
+  }
+
+  .wrapper-card__search-container {
+    width: 394px;
+    height: 143px;
+   
+  }
+
+  #title-boking-room {
+
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+
+  
 }
